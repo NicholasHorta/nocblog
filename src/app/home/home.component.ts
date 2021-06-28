@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import content from '../json/content.json';
 
 @Component({
   selector: 'app-home',

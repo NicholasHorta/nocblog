@@ -1,3 +1,33 @@
 [
-    {"data": "HELLO IM JSON DATA"}
+    {
+        "data": [
+            { "title": "Aria Attribute", "link": "html-css/aria-attribute",  "id": "html"},
+            { "title": "@media", "link": "html-css/at-media-rule", "id": "css"},
+            { "title": "@keyframes", "link": "html-css/at-keyframes-rule", "id": "css"}
+        ]
+    },
+    {
+        "data": [
+            { "title": "Const vs Let", "link": ""},
+            { "title": "Destructuring", "link": ""}
+        ]
+    },
+    {
+        "data": [
+            { "title": "@Output", "link": ""},
+            { "title": "ngClass", "link": ""}
+        ]
+    },
+    {
+        "data": [
+            { "title" : "State", "link": ""},
+            { "title" : "React Router", "link": ""}
+        ]
+    },
+    {
+        "data": [
+            { "title": "Const", "link": ""},
+            { "title": "Rune Literals", "link": ""}
+        ]
+    }
 ]

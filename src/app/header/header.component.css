@@ -43,7 +43,7 @@
     padding: 25rem;
     transform: rotate(10deg);
     border: .20rem solid var(--noc-theme-l);
-    right: -25rem;
+    right: -15rem;
     z-index: -1;
     top: -300%;
     /* opacity: 0.5; */

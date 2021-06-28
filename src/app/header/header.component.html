@@ -4,11 +4,21 @@
             &#91; TheGrandCoder &#93;
         </h1>
         <ul class="nav__site-links">
-            <li class="site-links__link"><a href="#">html</a></li>
-            <li class="site-links__link"><a href="#">css</a></li>
-            <li class="site-links__link"><a href="#">javascript</a></li>
-            <li class="site-links__link"><a href="#">angular</a></li>
-            <li class="site-links__link"><a href="#">go</a></li>
+            <li class="site-links__link">
+                <a (click)="menuSelectHandler('html-css')">html & css</a>
+            </li>
+            <li class="site-links__link">
+                <a (click)="menuSelectHandler('js')">javascript</a>
+            </li>
+            <li class="site-links__link">
+                <a (click)="menuSelectHandler('angular')">angular</a>
+            </li>
+            <li class="site-links__link">
+                <a (click)="menuSelectHandler('react')">react</a>
+            </li>
+            <li class="site-links__link">
+                <a (click)="menuSelectHandler('go')">go</a>
+            </li>
         </ul>
         <div class="nav__square-graphic"></div>
     </div>

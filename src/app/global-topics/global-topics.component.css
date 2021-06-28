@@ -1,0 +1,73 @@
+.component--container__global-topics-menu {
+    position: fixed;
+    background-color: var(--noc-theme-l);
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    left:  -320px; 
+    transition: left 200ms ease-in-out;
+}
+.menu-btn {
+    font-size: 3rem;
+    position: fixed;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--noc-theme-m);
+    left: 24px;
+    top: 16px;  
+    transition: left 200ms ease-in-out;
+}
+.toggleMenuDrawer {
+    left: 0px;
+    transition: left 200ms ease-in-out;
+}
+
+.toggleBtnDrawer {
+    left: 336px;
+    transition: left 200ms ease-in-out;
+}
+
+.global-topics__topic-menu > ul {
+    margin: 1rem 0 3rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: var(--noc-border-radius);
+    list-style: none;
+    display: flex;
+}
+.global-topics__topic-menu > ul li {
+    padding-right: 1rem;
+}
+
+.topic__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content__title {
+    color: var(--noc-theme-l);
+}
+
+.content__keys {
+    display: flex;
+}
+
+.key {
+    padding: .75rem;
+    border-radius: var(--noc-border-radius);
+    margin-left: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.html {
+    background-color: var(--noc-warning-m);
+}
+
+.css {
+    background-color: var(--noc-info-m);
+}
+
+

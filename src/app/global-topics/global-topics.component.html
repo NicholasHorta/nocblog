@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" (click)="toggleMenuHandler()" #menuToggleBtn class="menu-btn" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+  </svg>
+<div class="component--container__global-topics-menu">
+    <section *ngIf="currentMenuOption === 'html-css'" class="global-topics-menu__topic html-css">
+        <h2 class="content__title" id="html-css">HTML & CSS</h2>
+        <ul>
+            <li *ngFor="let item of htmlCssTopics.data">
+                <a>
+                    {{item.title}}
+                </a>
+            </li>   
+        </ul>
+    </section>
+    <section *ngIf="currentMenuOption === 'js'" class="global-topics__topic js">
+            <h2 class="content__title"  id="js">Javascript</h2>
+        <ul>
+            <li *ngFor="let item of javascriptTopics.data">{{item.title}}</li>
+        </ul>
+    </section>
+    <section *ngIf="currentMenuOption === 'angular'" class="global-topics__topic angular">
+            <h2 class="content__title">Angular</h2>
+        <ul>
+            <li *ngFor="let item of angularTopics.data">{{item.title}}</li>
+        </ul>
+    </section>
+    <section *ngIf="currentMenuOption === 'react'" class="global-topics__topic react">
+            <h2 class="content__title">React</h2>
+        <ul>
+            <li *ngFor="let item of reactTopics.data">{{item.title}}</li>
+        </ul>
+    </section>
+    <section *ngIf="currentMenuOption === 'go'" class="global-topics__topic go">
+            <h2 class="content__title">Go</h2>
+        <ul>
+            <li *ngFor="let item of golangTopics.data">{{item.title}}</li>
+        </ul>
+    </section>
+</div>
