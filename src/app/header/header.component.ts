@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MenuService } from '../services/menu.service';
 @Component({
   selector: 'app-header',
@@ -7,15 +6,16 @@ import { MenuService } from '../services/menu.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  constructor(private menuSVC: MenuService) { }
 
-  menuSub: Subscription
+  @Output() zxc = new EventEmitter<string>()
+
+  constructor(private menuSVC: MenuService) { }
 
   ngOnInit(): void {
   }
 
   menuSelectHandler(selectedOpt: string){
-    this.menuSVC.currentMenuOptionHandler(selectedOpt)
+    this.zxc.emit(selectedOpt)
   }
 
 }
