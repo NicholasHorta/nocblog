@@ -1,0 +1,65 @@
+.component--container__home {
+    max-width: 70%;
+    margin: 10rem auto;
+}
+
+.home--sub-container {
+    max-width: 70%;
+    margin-bottom: var(--noc--sub-container-margin-bottom);
+}
+
+.home__guide-keys-title {
+    margin-bottom: 1.5rem;
+    color: var(--noc-theme-l);
+}
+
+
+.home__about h2,
+.home__how-to-guide h2 {
+    color: var(--noc-theme-l);
+    margin-bottom: 0.75rem;
+}
+
+.home__guide-keys {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
+.guide-keys__guide {
+    border: var(--noc-border-width) solid;
+    border-radius: var(--noc-border-radius);
+    padding: 2rem;
+}
+
+.guide-keys__info {
+    border-color: var(--noc-info-m);
+    background-color: var(--noc-info-l);
+}
+.guide-keys__code{            
+    border-color: var(--noc-code-m);
+    background-color: var(--noc-code-l);
+}
+.guide-keys__warning{
+    border-color: var(--noc-warning-m);
+    background-color: var(--noc-warning-l);
+}
+
+.key-svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.key-svg.info {
+    color: var(--noc-info-m);
+}
+.key-svg.code {
+    color: var(--noc-code-m);
+}
+.key-svg.warning {
+    color: var(--noc-warning-m);
+}
+
+.guide__text {
+    color: var(--noc-text-light) !important;
+}

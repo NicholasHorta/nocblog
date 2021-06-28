@@ -1,0 +1,52 @@
+.component--container__nav {
+    max-width: 70%;
+    margin: auto;
+    /* Global Properties Above This Line */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 4rem 0;
+    color: var(--noc-theme-m);
+    color: #fff;
+    position: relative;
+
+}
+
+.nav__title {
+    font-size: 2rem;
+    cursor: pointer;
+    /* letter-spacing: 0.25rem; */
+}
+
+.nav__site-links {
+    display: flex;
+}
+
+.site-links__link {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.15rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    transition: color 100ms ease-in-out;
+}
+
+.site-links__link:hover {
+    color: var(--noc-theme-d);
+    transition: color 100ms ease-in-out;
+}
+
+.nav__square-graphic {
+    position: absolute;
+    padding: 25rem;
+    transform: rotate(10deg);
+    border: .20rem solid var(--noc-theme-l);
+    right: -25rem;
+    z-index: -1;
+    top: -300%;
+    /* opacity: 0.5; */
+    border-radius: 50px;
+    background-color: var(--noc-theme-l);
+}
