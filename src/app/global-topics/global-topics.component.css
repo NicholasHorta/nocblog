@@ -1,6 +1,6 @@
 .component--container__global-topics-menu {
     position: fixed;
-    background-color: var(--noc-theme-l);
+    background-color:rgba(253,111,115, 0.85);
     top: 0;
     bottom: 0;
     width: 320px;
@@ -8,15 +8,19 @@
     transition: left 200ms ease-in-out;
 }
 .menu-btn {
-    font-size: 3rem;
     position: fixed;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--noc-theme-m);
+    height: 3.5rem;
+    width: 3.5rem;
+    color: var(--noc-theme-l);
     left: 24px;
     top: 16px;  
     transition: left 200ms ease-in-out;
 }
+
+.menu-btn:hover {
+    color: var(--noc-theme-m);
+}
+
 .toggleMenuDrawer {
     left: 0px;
     transition: left 200ms ease-in-out;
@@ -35,8 +39,10 @@
     list-style: none;
     display: flex;
 }
-.global-topics__topic-menu > ul li {
-    padding-right: 1rem;
+.global-topics-menu__topic > ul li {
+    padding: 0.5rem 2rem;
+    color:  #fff;
+    font-size: 1.25rem;
 }
 
 .topic__content {
@@ -47,20 +53,12 @@
 }
 
 .content__title {
-    color: var(--noc-theme-l);
-}
-
-.content__keys {
-    display: flex;
-}
-
-.key {
-    padding: .75rem;
-    border-radius: var(--noc-border-radius);
-    margin-left: 1rem;
-    text-transform: uppercase;
     color: #fff;
+    padding: 2rem;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 1.5rem;
 }
+
 
 .html {
     background-color: var(--noc-warning-m);

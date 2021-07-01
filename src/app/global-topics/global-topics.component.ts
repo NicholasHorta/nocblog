@@ -9,11 +9,11 @@ import { MenuService } from '../services/menu.service';
 })
 
 export class GlobalTopicsComponent implements OnInit, OnChanges {
-    @Input('q') zxc: string = 'html-css';
+    @Input() setMenuTopic: string;
     @ViewChild('menuToggleBtn') menuToggleBtn;
 
     constructor(private menuSVC: MenuService){
-        this.currentMenuOption = 'html-css'
+        this.currentMenuOption = 'html-css';
     }
 
     htmlCssTopics = content[0];
@@ -28,10 +28,13 @@ export class GlobalTopicsComponent implements OnInit, OnChanges {
     }
 
     ngOnChanges(change){
-        console.log(change.zxc.currentValue);
-        this.currentMenuOption = change.zxc.currentValue
+        if(
+            this.menuSVC.menuDrawerHandler(change.setMenuTopic.currentValue) !== this.currentMenuOption 
+            &&
+            !this.menuToggleBtn.nativeElement.classList.contains('toggleBtnDrawer') 
+        ) this.toggleMenuHandler();
+        this.currentMenuOption = change.setMenuTopic.currentValue
     }
-
 
     toggleMenuHandler(){
         this.menuToggleBtn.nativeElement.classList.toggle('toggleBtnDrawer');

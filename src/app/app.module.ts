@@ -14,11 +14,10 @@ import { HeaderComponent } from './header/header.component';
 import { GlobalTopicsComponent } from './global-topics/global-topics.component';
 
 // Content Components
-import { JsMainComponent } from './blog-content/js/js.component';
-import { GoMainComponent } from './blog-content/go/go.component';
-import { HtmlCssMainComponent } from './blog-content/html-css/html-css.component';
-import { AngularMainComponent } from './blog-content/angular/angular.component';
-import { ReactMainComponent } from './blog-content/react/react.component';
+import { ArticlesComponent } from './articles/articles.component';
+
+// Article Components
+import { AsyncComponent } from './articles/async/async.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +25,8 @@ import { ReactMainComponent } from './blog-content/react/react.component';
     HeaderComponent,
     HomeComponent,
     GlobalTopicsComponent,
-    JsMainComponent,
-    GoMainComponent,
-    HtmlCssMainComponent,
-    AngularMainComponent,
-    ReactMainComponent
+    ArticlesComponent,
+    AsyncComponent
   ],
   imports: [
     BrowserModule,

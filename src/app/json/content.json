@@ -9,7 +9,8 @@
     {
         "data": [
             { "title": "Const vs Let", "link": ""},
-            { "title": "Destructuring", "link": ""}
+            { "title": "Destructuring", "link": ""},
+            { "title": "Async Await", "link": "/articles/async-await"}
         ]
     },
     {

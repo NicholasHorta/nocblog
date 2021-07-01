@@ -1,0 +1,26 @@
+.component--container__article {
+    max-width: 70%;
+    margin: 10rem auto;
+}
+
+.article__title{}
+.article__into{}
+
+.article__guide {
+    border: var(--noc-border-width) solid;
+    border-radius: var(--noc-border-radius);
+    padding: 2rem;
+}
+
+.article__info {
+    border-color: var(--noc-info-m);
+    background-color: var(--noc-info-l);
+}
+.article__code{            
+    border-color: var(--noc-code-m);
+    background-color: var(--noc-code-l);
+}
+.article__warning{
+    border-color: var(--noc-warning-m);
+    background-color: var(--noc-warning-l);
+}

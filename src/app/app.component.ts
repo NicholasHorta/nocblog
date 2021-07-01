@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  qwe: string = 'html-css';
+  menuTopic: string = 'html-css';
 
-  cxz(q: string){
-    this.qwe = q
+  alterMenuRequest(rxTopic: string){
+    this.menuTopic = rxTopic;
   }
 
 }

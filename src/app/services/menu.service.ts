@@ -1,16 +1,9 @@
-
 export class MenuService {
 
+    menuIsExpandedOut: boolean = false;
+    currentMenuItem: string;
 
-
-    // menuIsExpandedOut: boolean = false;
-    // currentMenuOption: string = 'go';
-
-    // currentMenuOptionHandler(selectedOpt: string){
-    //     if(this.currentMenuOption !== selectedOpt){
-    //         this.menuIsExpandedOut = true;
-    //         this.currentMenuOption = selectedOpt;
-
-    //     }
-    // }   
+    menuDrawerHandler(selectedOpt: string) {
+        return this.currentMenuItem = selectedOpt;
+    }    
 }
